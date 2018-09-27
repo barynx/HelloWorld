@@ -180,6 +180,7 @@ val u = Vector(3,9,27,60,34)
 val exampleSet = (1 to 5).toSet.toVector
 val exampleSet2 = (1 to 20 by 2).toVector
 val exampleSet3 = (1 to 60 by 2).toArray
+val exampleSet4 = (1 to 60 by 2).toArray
 
 //Maps
 val romanNumerals = Map("I" -> 1, "V" -> 5, "X" ->10)
