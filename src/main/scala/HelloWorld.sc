@@ -173,6 +173,7 @@ val v = Vector(1,2,4,8,16,32)
 val u = Vector(3,9,27,60,34)
 
 (for ((x,y) <- v zip u) yield x*y).sum
+(for ((x,y) <- v zip u) yield x+y).product
 
 //Sets
 
