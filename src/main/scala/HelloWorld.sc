@@ -186,3 +186,12 @@ val exampleSet4 = (1 to 60 by 2).toArray
 val romanNumerals = Map("I" -> 1, "V" -> 5, "X" ->10)
 
 //Sorted and GroupBy
+
+
+// sum() returns a function that takes two integers and returns an integer
+def sumCS(f: Int => Int): (Int, Int) => Int = {
+  def sumf(a: Int, b: Int): Int = { if(a < b) f(a) + sumf(a+1, b) else f(a) }
+  sumf
+}
+
+def cubeCS(x: Int): Int = x * x * x
